@@ -1,0 +1,796 @@
+@charset "utf-8";
+
+/* NEXT ENERGY CSS */
+
+body {
+  font-family: "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, sans-serif;
+  background-color: #b5e4f9;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/*------------------------------
+  .wrapper 
+------------------------------*/
+.wrapper {
+  width: 1280px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+/* header 
+------------------------------*/
+header {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 3.0rem;
+  width: 270px;
+  line-height: 43px;
+  font-weight: 900;
+  background-image: url(../img/favicon.png);
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: 2px 4px;
+  padding-left: 45px;
+}
+
+header h1 a {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #000;
+  text-decoration: none;
+}
+
+/* nav.global
+------------------------------*/
+.global {
+  width: 800px;
+  line-height: 26px;
+  margin-top: 10px;
+}
+
+.global ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.global li a {
+  display: block;
+  color: #000;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+.global li:last-child a {
+  padding-right: 0;
+}
+
+.global li a:hover span {
+  color: #FAB03F;
+  border-bottom: 3px solid #FAB03F;
+}
+
+/* .visual_img
+------------------------------*/
+.visual_img {
+  width: 100%;
+  height: 600px;
+  background-color: #3FAF79;
+  background-image: url(../img/visual_top.png);
+  background-size: cover;
+  position: relative;
+}
+
+.visual_img p {
+  position: absolute;
+  right: 50px;
+  top: 40px;
+  font-size: 3.8rem;
+  font-weight: 900;
+  color: #fff;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 2.0;
+  text-shadow: 2px 2px 2px #000;
+  text-align: left;
+}
+
+/* .content
+------------------------------*/
+.content {
+  margin: 40px;
+}
+
+/* main
+------------------------------*/
+main {
+  width: 1100px;
+}
+
+main h2 {
+  font-size: 2.0rem;
+  font-weight: 900;
+  line-height: 30px;
+  color: #3FAF79;
+  font-family: 'Noto Sans JP', sans-serif;
+  padding-left: 50px;
+  margin-bottom: 20px;
+}
+
+hr {
+  background-color: #FAB03F;
+  height: 2px;
+  width: 1100px;
+  border: none;
+  margin-left: 50px;
+}
+
+main p {
+  /* margin-left: 50px; */
+  margin-bottom: 10px;
+  /* font-family: 'Noto Sans JP', sans-serif; */
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+main section {
+  margin-bottom: 40px;
+}
+
+main section:last-child {
+  margin-bottom: 0;
+}
+
+/*------------------------------
+  NEWS
+------------------------------*/
+/* dl.news 
+------------------------------*/
+dl.news {
+  font-size: 1.6rem;
+  padding: 10px 20px;
+  margin-left: 50px;
+}
+
+.news div {
+  display: flex;
+  justify-content: flex-start;
+  line-height: 24px;
+  padding: 10px 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.news dt {
+  width: 9em;
+}
+
+.news dd {
+  width: calc(100% - 9em);
+  text-align: justify;
+}
+
+.news dd a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* 詳しく知る　.readmore 
+------------------------------*/
+.readmore, .readmore2 a {
+  text-align: right;
+}
+
+.readmore span, .readmore2 span {
+  color: #3FAF79;
+  font-weight: 900;
+}
+
+.readmore a {
+  color: #000;
+  text-decoration: none;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.readmore a:hover, .readmore a:hover span, .readmore2 a:hover span {
+  color: #FAB03F;
+}
+
+/*------------------------------
+  事業紹介
+------------------------------*/
+/* div.business
+------------------------------*/
+.business {
+  margin: 20px 0;
+}
+
+/* .business1
+------------------------------*/
+.business1, .business2, .business3, .business4 {
+  width: 1010px;
+  background-color: #b5e4f9;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 70px;
+  margin-bottom: 30px
+}
+
+.business1_img {
+  width: 400px;
+  height: 260px;
+  background-color: #3FAF79;
+  background-image: url(../img/business_1.jpg);
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.business1_img p {
+  position: absolute;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 0.5px 0.5px 05px #000;
+  margin: 0;
+}
+
+.business1_block, .business2_block, .business3_block, .business4_block {
+  width: 600px;
+}
+
+.business1_block ul, .business2_block ul, .business3_block ul, .business4_block ul {
+  list-style-type: disc;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 40px;
+  line-height: 2.0;
+}
+
+/* .business2
+------------------------------*/
+.business2_img {
+  width: 400px;
+  height: 260px;
+  background-color: #3FAF79;
+  background-image: url(../img/business_2.jpg);
+  background-size: cover;
+  /* background-position: 0 -20px; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.business2_img p {
+  position: absolute;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 0.5px 0.5px 05px #000;
+  margin: 0;
+}
+
+/* .business3
+------------------------------*/
+.business3_img {
+  width: 400px;
+  height: 260px;
+  background-color: #3FAF79;
+  background-image: url(../img/business_3.jpg);
+  background-size: cover;
+  /* background-position: 0 -30px; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.business3_img p {
+  position: absolute;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 0.5px 0.5px 05px #000;
+  margin: 0;
+}
+
+/* .business4
+------------------------------*/
+.business4_img {
+  width: 400px;
+  height: 260px;
+  background-color: #3FAF79;
+  background-image: url(../img/business_4.jpg);
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.business4_img p {
+  position: absolute;
+  display: flex;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 0.5px 0.5px 05px #000;
+  margin: 0;
+}
+
+/* .readmore2
+------------------------------*/
+.readmore2 a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  padding: 50px 5px 0 100px;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.readmore2 a:hover {
+  color: #FAB03F;
+}
+
+/* footer
+------------------------------*/
+footer {
+  width: 100%;
+  background-color: #ccc;
+  padding: 20px auto;
+  color: #000;
+}
+
+footer .content {
+  margin: 0;
+}
+
+footer h2 {
+  font-size: 2.2rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 33px;
+  background-image: url(../img/favicon.png);
+  background-size: 33px;
+  background-repeat: no-repeat;
+  background-position: 10px 30px;
+  padding: 30px 0 0 45px;
+  margin-left: 40px;
+}
+
+footer a {
+  color: #000;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+footer address {
+  margin-left: 80px;
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+}
+
+small.foot {
+  display: block;
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 40px;
+  padding-bottom: 30px;
+}
+
+/*------------------------------
+  会社情報
+------------------------------*/
+/* .company_img
+------------------------------*/
+.company_img {
+  width: 100%;
+  height: 300px;
+  background-color: #ccc;
+  background-image: url(../img/visual_company.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.company_img p {
+  position: absolute;
+  left: 90px;
+  top: 40px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 3.0rem;
+  font-weight: 900;
+  text-shadow: 2px 2px 2px #fff;
+  color: #3FAF79;
+  line-height: 1.6;
+}
+
+/*------------------------------
+  会社概要
+------------------------------*/
+table.company {
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+table.company th {
+  width: 320px;
+  font-size: 1.6rem;
+  background-color: #ccc;
+  text-align: right;
+  padding: 10px 20px;
+  border: 1px solid #000;
+}
+
+table.company td {
+  width: 680px;
+  font-size: 1.6rem;
+  padding: 10px 20px;
+  border: 1px solid #000;
+}
+
+/*------------------------------
+  経営方針
+------------------------------*/
+.poli {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.polino {
+  border: 4px solid #b5e4f9;
+  width: calc((100% - 80px) / 5);
+  text-align: center;
+  height: 192px;
+}
+
+.poli h3 {
+  font-size: 4rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #FAB03F;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.polino p {
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: 2;
+  text-align: center;
+  text-wrap: wrap;
+}
+
+/*------------------------------
+  沿革
+------------------------------*/
+dl.history {
+  font-size: 1.6rem;
+  /* border: 1px solid #ccc; */
+  padding: 10px 20px;
+  margin-left: 40px;
+}
+
+.history div {
+  display: flex;
+  justify-content: flex-start;
+  line-height: 24px;
+  padding: 10px 0;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.history dt {
+  width: 9em;
+}
+
+.history dd {
+  width: calc(100% - 9em);
+  text-align: justify;
+}
+
+/*------------------------------
+  企業理念
+------------------------------*/
+.philosophy {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 20px 0 40px 50px;
+}
+
+.philo {
+  border: 4px solid #ccc;
+  width: calc((100% - 40px) / 3);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.philo p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2;
+  text-align: center;
+  text-wrap: wrap;
+  padding: 0 10px;
+}
+
+/*------------------------------
+  代表メッセージ
+------------------------------*/
+.representive {
+  margin: 20px 50px;
+}
+
+.representive img {
+  width: 1050px;
+  margin-bottom: 30px;
+}
+
+.representive p {
+  font-size: 1.6rem;
+  width: 950px;
+  padding: 10px 50px;
+  color: #000;
+  font-weight: 300;
+  text-align: justify;
+}
+
+p.name {
+  text-align: right;
+}
+
+p.name img {
+  width: 180px;
+  height: 84px;
+  text-align: right;
+}
+
+/*------------------------------
+  国内・海外拠点
+------------------------------*/
+h3.place {
+  margin: 20px 0 0 50px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #3FAF79;
+}
+
+/*------------------------------
+  グループ会社
+------------------------------*/
+.group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.gr {
+  border: 2px solid #ccc;
+  width: calc((100% - 90px) / 4);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.gr h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  padding-top: 20px;
+}
+
+.gr li {
+  font-size: 1.6rem;
+  line-height: 2;
+  text-align: left;
+  text-wrap: wrap;
+  padding: 10px 10px 5px 20px;
+}
+
+/*------------------------------
+  採用
+------------------------------*/
+.recruit_img {
+  width: 100%;
+  height: 300px;
+  background-color: #ccc;
+  background-image: url(../img/visual_recruit.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.recruit_img p {
+  position: absolute;
+  left: 90px;
+  top: 40px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 3.0rem;
+  font-weight: 900;
+  text-shadow: 2px 2px 2px #fff;
+  color: #3FAF79;
+  line-height: 1.6;
+}
+
+/*------------------------------
+  お問い合わせ
+------------------------------*/
+.form-img {
+  width: 100%;
+  height: 300px;
+  background-color: #ccc;
+  background-image: url(../img/visual_form.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.form-img p {
+  position: absolute;
+  left: 90px;
+  top: 40px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 3.0rem;
+  font-weight: 900;
+  text-shadow: 2px 2px 2px #fff;
+  color: #3FAF79;
+  line-height: 1.6;
+}
+
+.contact p {
+  margin: 10px 0 10px 50px;
+  font-size: 1.6rem;
+}
+
+.question a, .report a {
+  color: #000;
+  font-size: 1.6rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.question a:hover, .report a:hover {
+  color: #FAB03F;
+}
+
+span.must {
+  color: #FAB03F;
+  border: 1px solid;
+  padding: 0 2px;
+  font-size: 1.4rem;
+  margin-left: 2px;
+}
+
+/* table.contactform
+------------------------------*/
+table.contactform {
+  width: calc(100% - 50px);
+  margin: 20px 0 50px 50px;
+  border: 1px solid #ccc;
+}
+
+table.contactform th {
+  width: 300px;
+  font-size: 1.6rem;
+  text-align: left;
+  color: #000;
+  padding: 10px 30px;
+  border-bottom: 1px solid #ccc;
+}
+
+table td {
+  width: 800px;
+  font-size: 1.6rem;
+  padding: 10px 30px;
+  border: 1px solid #ccc;
+  line-height: 2;
+}
+
+input, select, textarea {
+  font-size: 1.6rem;
+  padding: 5px;
+}
+
+small.form_s {
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+/* .personaldata
+------------------------------*/
+.personaldata dl {
+  border: 2px solid #000;
+  padding: 20px;
+  margin: 20px 0 20px 50px;
+  height: 150px;
+  font-size: 1.6rem;
+  overflow-y: auto;
+}
+
+.personaldata dt {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.personaldata dd {
+  font-size: 1.4rem;
+  text-align: left;
+  padding-bottom: 2px;
+}
+
+.agreecheck {
+  margin: 20px 0;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+}
+
+.check {
+  display: flex;
+  justify-content: center;
+}
+
+.check input {
+  width: 250px;
+  margin: 20px;
+
+}
+
+/* ラジオとチェックボックスとテキスト間の空き */
+input[type="radio"], input[type="checkbox"] {
+  margin: 0 5px;
+}
+
+/* TOPへ戻るボタン */
+.button_top {
+  background-color: #b5e4f9;
+  color: #fff;
+  font-size: 16px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  bottom: 10px;
+  right: 50px;
+  text-decoration: none;
+}
+
+.button_top::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  transform: rotate(-45deg);
+}
+
+/* ⑦マウスをかざした時に変化する色の指定 */
+.button_top:hover {
+  background-color: #FAB03F;
+  color: #fff;
+}
